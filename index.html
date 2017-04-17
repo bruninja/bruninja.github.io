@@ -1,18 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Teste - Neoprospecta</title>
-  <base href="/">
+    <base href="/" />
+    <title>Prova Delinea - Bruno Carvalho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- application css -->
+    <link href="style.css" rel="stylesheet" />
 
+    <!-- polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
 </head>
 <body>
-  <app-root>Carregando...</app-root>
-<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
-<script src="https://unpkg.com/reflect-metadata@0.1.8"></script>
+    <app>
+      <img class="carregando" src="http://www.delinea.com.br/wp-content/uploads/2016/07/logo_delinea.png" alt="" />
+    </app>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
 </html>
